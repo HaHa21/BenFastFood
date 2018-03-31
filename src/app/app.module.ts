@@ -17,6 +17,9 @@ import { AuthService } from './Mainpages/auth/auth.service';
 import { HealthComponent } from './Mainpages/health/health.component';
 import { PostDirective } from './Mainpages/post/post.directive';
 import { SignupComponent } from './Mainpages/auth/signup.component';
+import { SigninComponent } from './Mainpages/auth/signin.component';
+import { LogoutComponent } from './Mainpages/auth/logout.component';
+import { AuthenticationComponent } from './Mainpages/auth/authentication.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +29,13 @@ import { SignupComponent } from './Mainpages/auth/signup.component';
     AppBodyComponent,
     AboutUsComponent,
     HomeComponent,
-    PromotionComponent, 
+    AuthenticationComponent,
+    PromotionComponent,
     HealthComponent,
-    PostDirective, 
+    PostDirective,
     PostBannerComponent,
-    SignupComponent
-    
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +44,9 @@ import { SignupComponent } from './Mainpages/auth/signup.component';
     HttpModule,
     routing
   ],
-  entryComponents: [ 
+  entryComponents: [
       PromotionComponent, HealthComponent
-  ], 
+  ],
   providers: [
       PostService, AuthService
   ],
