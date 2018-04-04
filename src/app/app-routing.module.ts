@@ -4,8 +4,8 @@ import { HomeComponent } from './Mainpages/home/home.component';
 import { AboutUsComponent } from './Mainpages/about-us/about-us.component';
 import { PromotionComponent } from './Mainpages/promotions/promotions.component';
 import { SignupComponent } from './Mainpages/auth/signup.component';
-import { AUTH_ROUTES } from "./Mainpages/auth/auth.routes";
 import { AuthenticationComponent } from "./Mainpages/auth/authentication.component";
+import { AUTH_ROUTES } from "./Mainpages/auth/auth.routes";
 
 const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
