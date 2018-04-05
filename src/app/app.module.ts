@@ -2,7 +2,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RecaptchaModule } from 'ng-recaptcha';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './Components/app-header/app-header.component';
@@ -17,9 +16,6 @@ import { PostService } from './Mainpages/post/post.service';
 import { AuthService } from './Mainpages/auth/auth.service';
 import { HealthComponent } from './Mainpages/health/health.component';
 import { PostDirective } from './Mainpages/post/post.directive';
-import { LogoutComponent } from './Mainpages/auth/logout.component';
-import { SignupComponent } from './Mainpages/auth/signup.component';
-import { SigninComponent } from './Mainpages/auth/signin.component';
 import { AuthenticationComponent } from './Mainpages/auth/authentication.component';
 import { ErrorComponent } from './Components/errors/error.component';
 import { ErrorService } from './Components/errors/error.service';
@@ -37,9 +33,6 @@ import { ErrorService } from './Components/errors/error.service';
     HealthComponent,
     PostDirective,
     PostBannerComponent,
-    LogoutComponent,
-    SignupComponent,
-    SigninComponent,
     ErrorComponent
   ],
   imports: [
@@ -48,7 +41,7 @@ import { ErrorService } from './Components/errors/error.service';
     routing,
     ReactiveFormsModule,
     HttpModule,
-    RecaptchaModule.forRoot()
+    
   ],
   entryComponents: [
       PromotionComponent, HealthComponent
