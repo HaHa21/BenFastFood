@@ -1,5 +1,5 @@
 ﻿<div class="col-md-8 col-md-offset-2">
-  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="email">Mail</label>
       <input type="email"
@@ -14,9 +14,12 @@
              class="form-control"
              formControlName="password">
     </div>
+
+    <re-captcha (resolved)="resolved($event)" siteKey="6LcmJFAUAAAAANNLJg_9TnOLQwMA1CurUbr8b3sJ"></re-captcha>
+    <br><br>
     <button class="btn btn-primary"
             type="submit"
-            [disabled]="!myForm.valid">
+            [disabled]="!userForm.valid">
       Submit
     </button>
   </form>

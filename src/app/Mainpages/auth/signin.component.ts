@@ -37,4 +37,8 @@ export class SigninComponent {
             password: new FormControl(null, Validators.required)
         });
     }
+
+    resolved(captchaResponse: string){
+      console.log('Resolved Captcha with response ', ${captchaResponse});
+    }
 }

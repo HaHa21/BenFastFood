@@ -5,8 +5,12 @@ import { AuthService } from "./auth.service";
 
 @Component({
     selector: 'app-logout',
-    templateUrl: : './logout.component.html',
-    styleUrls: ['./logout.component.css']
+    template:   `
+        <div class="col-md-8 col-md-offset-2">
+            <h1>See you soon</h1>
+            <button class="btn btn-danger" (click)="onLogout()">Logout</button>
+        </div>
+    `
 })
 
 export class LogoutComponent {
